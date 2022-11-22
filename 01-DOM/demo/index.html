@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Avanzado</title>
+</head>
+<body>
+    <div>
+        <h3 class="box" id = "red">Cajita 1</h3> 
+        <h3 class="box" id = "green">Cajita 2</h3> 
+        <h3 class="box" id = "blue">Cajita 3</h3> 
+    </div>
+    <div>
+        <ul>Employees
+            <li class="toto">Tobias</li>
+            <li>Damian</li>
+            <li>Nicole</li>
+        </ul>
+    </div>
+    <!-- <script>
+        let allLi = document.getElementsByTagName("li")
+        for (let i = 0; i < allLi.length; i++) {
+            if(i % 2 === 0) allLi[i].className += " redList"
+            console.log(allLi[i].classList)
+        }
+    </script> -->
+    <!-- <script>
+        let allBoxes = document.getElementsByClassName("box")
+        for (let i = 0; i < allBoxes.length; i++) {
+        allBoxes[i].innerText += " !"
+        }
+    </script> -->
+    <script>
+        let greenBox = document.getElementById("green") 
+        document.addEventListener("click", function (e) {
+            greenBox.style.position = "fixed"
+            console.log(e.clientY , e.clientX)
+        })
+    </script>
+</body>
+</html>

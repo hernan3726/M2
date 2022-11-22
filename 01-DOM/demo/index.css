@@ -1,0 +1,27 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+}
+
+#red {
+background-color: red;
+}
+
+#blue {
+background-color: blue;
+}
+
+#green {
+background-color: green;
+}
+
+.redList {
+    color: red;
+}
+
+.toto {
+    margin-left: 20px;
+}
