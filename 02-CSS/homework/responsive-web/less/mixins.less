@@ -1,1 +1,28 @@
 // Mixins acá
+.flex (@direction: row, @justify: center, @align: center) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.imgBorderRadius(@radius:20px) {
+    border-radius: @radius;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.registerBtn (@bg-color,@font-color) {
+    .btn();
+    color: @font-color;
+    background-color: @bg-color;
+    display: inline-block;
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color
+    }
+}
